@@ -5,55 +5,176 @@
     <title>Youtube</title>
     <style>
         body {
-            margin: 0; /* Remove margens padrão do body */
-            font-family: Arial, sans-serif; /* Define a fonte para o corpo do documento */
+            margin: 0; 
+            font-family: Arial, sans-serif; 
         }
         .parte-cima {
             display: flex;
-            align-items: center; /* Centraliza os itens verticalmente */
-            background-color: #ff0000; /* Cor de fundo para visualização */
-            padding: 10px; /* Espaçamento interno */
+            align-items: center;
+            background-color: #ffffff; 
         }
         .menu-icon {
-            font-size: 24px; /* Tamanho da fonte do ícone */
-            cursor: pointer; /* Altera o cursor ao passar por cima */
+            font-size: 24px; 
+            cursor: pointer; 
             margin-right: 10px;
         }
         .logo {
-            max-width: 100px; /* Largura máxima da imagem */
-            height: auto; /* Mantém a proporção da imagem */
-            margin-right: 400px;
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 350px;
+            cursor: pointer;
+           
+        }
+        #search {
+            border: solid;
+            padding: 8px; 
+            margin: 0px;
+            height: auto;
+            width: 300px;
+            outline: none;
+            border-radius: 100px;
+            margin-right: 15px;
             
         }
-        .search {
-            padding: 9px;
-            font-size: 16px;
-            border: 2px solid #ccc; 
-            border-radius: 20px;
-            margin-right: 10px;
-            padding-right: 30px;
-            box-sizing: border-box;
-        }
         .lupa{
-            max-width: 30px;
+            max-width: 25px;
             height: auto;
             cursor: pointer;
         }
         .teclado{
-            max-width: 30px;
+            max-width: 25px;
             height: auto;
             margin-right: 10px;
+            cursor: pointer;
 
         }
+        .microfone{
+            max-width: 25px;
+            height: auto;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .trespontos{
+            max-width: 25px;
+            height: auto;
+            margin-left: 150px;
+            display: block;
+            fill: currentcolor;
+            cursor: pointer;
+        }
+        .profile-circle {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%; 
+            overflow: hidden; 
+            background-color: #ccc; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 150px;
+        }
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            cursor: pointer;
+        }
+        .casinha{
+            max-width: 24px;
+            height: auto;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .lateral-site{
+            margin-left: 10px;
+            background-color: #f0f0f0;
+           display: table;
+           
+        }
+        #inicio-lateral{
+            margin: 0;
+             display: inline-block;
+              vertical-align: middle;
+              margin-top: 15px;
+              cursor: pointer;
+        }
+        .shorts{
+            max-width: 20px;
+            height: auto;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        #shorts-lateral{
+            margin: 0;
+             display: inline-block;
+              vertical-align: middle;
+              margin-top: 15px;
+              cursor: pointer;
+        }
+        .inscriçoes{
+            max-width: 20px;
+            height: auto;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        #inscriçoes-lateral{
+            margin: 0;
+             display: inline-block;
+              vertical-align: middle;
+              margin-top: 15px;
+              cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
     <div class="parte-cima">
         <p1 class="menu-icon">☰</p1>
         <img class="logo" src="https://classic.exame.com/wp-content/uploads/2017/08/new-youtube-logo-840x402.jpg?quality=70&strip=info&w=840" alt="YouTube Logo">
-        <input type="search" class="search">
-        <img class="teclado" src="teclado.png">
-        <img class="lupa" src="ampliacao.png">
+        <input id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Pesquisar" aria-label="Pesquisar" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox" dir="ltr" >
+        <img class="teclado" src="imagens/teclado.png">
+        <img class="lupa" src="imagens/ampliacao.png">
+        <img class="microfone" src="imagens/microfone-old-fashion.png"> 
+        <div class="trespontos"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></div>
+        <div class="profile-circle">
+           
+            <img class="profile-image" src="imagens/chico-moedas_1_98604.webp" alt="Profile Image">
+        </div>
+        </div>
+        <div class="lateral-site">
+        <table>
+            <tr>
+                <td>
+                    <img src="imagens/home.png" class="casinha" alt="Imagem">
+                </td>
+                <td>
+                    <p id="inicio-lateral">Inicio</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <img src="imagens/02cc2df2074675a18e9edf1d1e3dbb43.png" class="shorts">
+                </td>
+                <td>
+                    <p id="shorts-lateral">Shorts</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <img src="imagens/lista-de-reproducao.png" class="inscriçoes" alt="Imagem">
+                </td>
+                <td>
+                    <p id="inscriçoes-lateral">inscriçoes</p>
+                </td>
+            </tr>
+        </table>
+
+        </div>
+        <!--fim lateral-->
     </div>
 </body>
 </html>
