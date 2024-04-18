@@ -6,7 +6,7 @@
     <style>
         body {
             margin: 0; 
-            font-family: Arial, sans-serif; 
+            font-family: 'roboto' sans-serif; 
         }
         .parte-cima {
             display: flex;
@@ -84,10 +84,11 @@
             height: auto;
             margin-top: 15px;
             cursor: pointer;
+            margin-right: 15px;
         }
         .lateral-site{
             margin-left: 10px;
-            background-color: #f0f0f0;
+            background-color: #ffffff;
            display: table;
            
         }
@@ -97,12 +98,14 @@
               vertical-align: middle;
               margin-top: 15px;
               cursor: pointer;
+              
         }
         .shorts{
             max-width: 20px;
             height: auto;
             margin-top: 15px;
             cursor: pointer;
+            margin-right: 15px;
         }
         #shorts-lateral{
             margin: 0;
@@ -116,6 +119,7 @@
             height: auto;
             margin-top: 15px;
             cursor: pointer;
+            margin-right: 15px;
         }
         #inscriçoes-lateral{
             margin: 0;
@@ -124,7 +128,186 @@
               margin-top: 15px;
               cursor: pointer;
         }
-
+        .baixo-lateral{
+            margin-top: 15px;
+        }
+        .canal{
+            max-width: 20px;
+            height: auto;
+            margin-top: 15px;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .menu-item img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .menu-item p {
+            margin: 0;
+            cursor: pointer;
+            font-size: large;
+        }
+        .voce{
+            cursor: pointer;
+        }
+        .historico {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .historico-img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .historico p {
+            margin: 0;
+            cursor: pointer;
+            font-size:large;
+        }
+        .playlist {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .playlist-img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .playlist p {
+            margin: 0;
+            cursor: pointer;
+            font-size:large;
+        }
+        .videos-seus {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .videos-seus-img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .videos-seus p {
+            margin: 0;
+            cursor: pointer;
+            font-size:large;
+        }
+        .relogio {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .relogio-img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .relogio p {
+            margin: 0;
+            cursor: pointer;
+            font-size:large;
+        }
+        .like {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .like-img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .like p {
+            margin: 0;
+            cursor: pointer;
+            font-size:large;
+        }
+        .insc{
+            font-size: 25px;
+            margin-left: 15px;
+        }
+        .F0rsaken {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%; 
+            overflow: hidden; 
+            background-color: #ccc; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .F0rsaken-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            cursor: pointer;
+        }
+        .insc-1 {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .tck {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%; 
+            overflow: hidden; 
+            background-color: #ccc; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .tck-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            cursor: pointer;
+        }
+        .insc-2 {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .video-1{
+            margin-left: 5px;
+        }
+        .video-2{
+            margin-left: 5px;
+        }
+        .video-3{
+            margin-left: 5px;
+        }
+        .videos{
+            margin-left: 150px;
+        }
+        .videos2{
+        margin-left: 70px;
+    }
+    .videos3{
+        margin-left: 160px;
+    }
     </style>
 </head>
 <body>
@@ -141,40 +324,136 @@
             <img class="profile-image" src="imagens/chico-moedas_1_98604.webp" alt="Profile Image">
         </div>
         </div>
-        <div class="lateral-site">
         <table>
             <tr>
                 <td>
-                    <img src="imagens/home.png" class="casinha" alt="Imagem">
+                    <div class="lateral-site">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="imagens/home.png" class="casinha" alt="Imagem">
+                                </td>
+                                <td>
+                                    <p id="inicio-lateral">Início</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="imagens/02cc2df2074675a18e9edf1d1e3dbb43.png" class="shorts">
+                                </td>
+                                <td>
+                                    <p id="shorts-lateral">Shorts</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="imagens/lista-de-reproducao.png" class="inscriçoes" alt="Imagem">
+                                </td>
+                                <td>
+                                    <p id="inscriçoes-lateral">inscrições</p>
+                                </td>
+                            </tr>
+                        </table>
                 </td>
                 <td>
-                    <p id="inicio-lateral">Inicio</p>
+                    <div class="videos">
+                        <iframe class="video-2" width="300" height="196,64" src="https://www.youtube.com/embed/kFU35etXRE4?si=hvdicRvRLzr-c-7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="video-1" width="300" height="196,64" src="https://www.youtube.com/embed/H9w3sWxoNfM?si=YI--0b--VRMl1F1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="video-3" width="300" height="196,64" src="https://www.youtube.com/embed/AgK1K5_1vUA?si=JHgGFJgPCiZdXlLS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </td>
             </tr>
         </table>
+        
+        <p1 class="__">__________________________</p1>
+        
+        <!--parte media lateral-->
         <table>
             <tr>
                 <td>
-                    <img src="imagens/02cc2df2074675a18e9edf1d1e3dbb43.png" class="shorts">
+                    <div class="baixo-lateral">
+            
+                        <p1 class="voce">VOCÊ  > </p1>
+                        <div class="menu-item">
+                            <img src="imagens/pessoa-de-contato.png" alt="Ícone Seu Canal">
+                            <p>Seu Canal</p>
+                        </div>
+                        <div class="historico">
+                            <img src="imagens/images.png" alt="Ícone historico" class="historico-img">
+                            <p>Histórico</p>
+                        </div>
+                        <div class="playlist">
+                            <img src="imagens/playlist.png" alt="Ícone playlist" class="playlist-img">
+                            <p>Playlists</p>
+                        </div>
+                        <div class="videos-seus">
+                            <img src="imagens/arrows.png" alt="Ícone playlist" class="videos-seus-img">
+                            <p>Seus vídeos</p>
+                        </div>
+                        <div class="relogio">
+                            <img src="imagens/clock.png" alt="Ícone playlist" class="relogio-img">
+                            <p>Assistir mais tarde</p>
+                        </div>
+                        <div class="like">
+                            <img src="imagens/like.png" alt="Ícone playlist" class="like-img">
+                            <p>Vídeos com "Gostei"</p>
+                        </div>
+                        <p1 class="__">__________________________</p1>
+                    </div>
                 </td>
                 <td>
-                    <p id="shorts-lateral">Shorts</p>
+                    <div class="videos2">
+                        <iframe width="300" height="196,64" src="https://www.youtube.com/embed/_2fy7hvOYFY?si=KuEIYLXbLp8_nlhS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="300" height="196,64" src="https://www.youtube.com/embed/bUwEHGwsJWY?si=knbZPuOgXxRlV1AK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="300" height="196,64" src="https://www.youtube.com/embed/07xQ_lNTfRw?si=3fG2Ir51QVJq5Zcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </td>
             </tr>
         </table>
+        
+        <!--fim parte media lateral-->
+        <!--Inicio baixo lateral-->
         <table>
             <tr>
                 <td>
-                    <img src="imagens/lista-de-reproducao.png" class="inscriçoes" alt="Imagem">
+                    <div>
+                        <p1 class="insc">inscrições</p1>
+                        <div class="insc-1">
+                        <div class="F0rsaken">
+                            <img src="imagens/channels4_profile.jpg" alt="Ícone playlist" class="F0rsaken-img">
+                        </div>
+                        <p>f0rsaken</p>
+                        </div>
+                        <div class="insc-2">
+                        <div class="tck">
+                            <img src="imagens/channels4_profile (1).jpg" alt="Ícone playlist" class="tck-img">
+                        </div>
+                        <p>TCK</p>
+                        </div>
+                        </div>
+                    </div>
                 </td>
                 <td>
-                    <p id="inscriçoes-lateral">inscriçoes</p>
+                    <div class="videos3">
+                    <iframe width="300" height="196,64" src="https://www.youtube.com/embed/NlCnIhRQH04?si=eegJhy4kJgFlF1zR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="300" height="196,64" src="https://www.youtube.com/embed/t0bdqJrVJdk?si=AoWcsWkwBGg5vGCW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="300" height="196,64" src="https://www.youtube.com/embed/bUN5iUj_mQQ?si=qlpRsxvWLvxNjFbN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
                 </td>
             </tr>
         </table>
-
+        
+        <!--fim baixo lateral-->
         </div>
         <!--fim lateral-->
+
+        <!--inicio Videos-->
+            
+        <!--Fim videos-->
     </div>
 </body>
 </html>
